@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои хобби</title>
+    <style>
+        /* Основные стили */
+        body {
+            background-color: #f3e5f5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #6d4c7d;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Контейнер */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        /* Заголовок и навигация */
+        header {
+            background-color: #d1c4e9;
+            color: #4a306d;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #6d4c7d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:link {
+            color: #ba68c8;
+        }
+
+        nav ul li a:visited {
+            color: #7b1fa2;
+        }
+
+        nav ul li a:hover {
+            color: #4a306d;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: #4a306d;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ba68c8;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            text-indent: 30px;
+        }
+
+        .info p::first-letter {
+            color: #ba68c8;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Стили для списка хобби */
+        #hobbies ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #hobbies ul li {
+            display: flex;
+            align-items: center;
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        #hobbies img {
+            width: 350px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #hobbies p {
+            font-size: 1.1em;
+            margin: 0;
+            color: #6d4c7d;
+        }
+
+        /* Стили для социальных сетей */
+        #socials ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #socials ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #socials ul li a {
+            color: #ba68c8;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d1c4e9;
+            color: #4a306d;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            border-radius: 10px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            #hobbies img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            #hobbies ul li {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Основной контейнер сайта -->
+    <div class="container">
+        <header>
+            <!-- Заголовок сайта -->
+            <h1>МОИ ХОББИ (´｡• ᵕ •｡`)</h1>
+            <!-- Навигационное меню -->
+            <nav>
+                <ul>
+                    <li><a href="#about">О себе</a></li>
+                    <li><a href="#hobbies">Мои хобби</a></li>
+                    <li><a href="#socials">Соцсети</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент -->
+        <main>
+            <!-- Раздел "О себе" -->
+            <section id="about">
+                <h2>О себе</h2>
+                <div class="info">
+                    <p>Всем привет! Меня зовут Юля (aka Vita Volkova aka grasokol aka michellle9101) и добро пожаловать на мой сайт! На данный момент я живу в городе Минск (Беларусь) и обучаюсь на третьем курсе специальности "Управление информационными ресурсами" (aka "да я экономисточка" aka "вообще-то, я учила computer science" aka "по образованию я управленица"). </p>
+                    <p>Моя мечта - научиться без посторонней помощи делать "взрослые звонки" для того, чтобы получить какую-то информацию, оформить заказ или бронь. Мой девиз по жизни: "The best thing about being alive is that sometimes there's a cat".</p>
+                </div>
+            </section>
+
+            <!-- Раздел "Мои хобби" -->
+            <section id="hobbies">
+                <h2>Мои хобби</h2>
+                <ul>
+                    <li>
+                        <img src="пазлы.jpg" alt="Сбор пазлов">
+                        <p>Сбор пазлов прекрасно подходит для расслабления и тренировки внимания. За этим занятием я могу не заметить как пройдёт 10 часов без еды и движения. Я увлекаюсь пазлами уже много лет, и за это время у меня скопилась приличная коллекция. Поэтому моё окружение знает, что, если не хочется ломать голову над подарком для меня, всегда можно подарить пазлы. Мои любимые производители - "Trefl" и "Piece & Love Puzzles"))</p>
+                    </li>
+                    <li>
+                        <img src="игры.gif" alt="Видеоигры">
+                        <p>Видеоигры - ещё один замечательный способ увлекательно проводить время. Я не слишком большая фанатка однотипных скилл-зависимых игр, а вот красивые бродилки - это мы заглянем под каждый камень, интерактивное кино - поплачем над смертями второстепенных персонажей, красочный кооп с кучей механик - не распрощаемся, пока не выбьем платину. П.с. Спустя 5 лет использования паленых контроллеров, так и не было выявлено причин покупать реговые.</p>
+                    </li>
+                    <li>
+                        <img src="волейбол.jpg" alt="Волейбол">
+                        <p>Волейбол - это отличный способ оставаться активной и здоровой. Под видом веселой игры с любимой командой вы получаете полноценную кардио тренировку, ведь здесь важно всё: внимательность, реакция, гибкость, специальные навыки, силовые показатели, скорость. Доказано, что командные игры на свежем воздухе помогают избавиться от физических и ментальных проблем. Так что все на волейбол!!! </p>
+                    </li>
+                    <li>
+                        <img src="готовка.jpg" alt="Кулинария">
+                        <p>Готовка еды - пошаговый медитативный процесс, который к тому же приводит к приятным результатам. Существует всего два правила. "Побольше сыра", если блюдо солёное, и "побольше крема", если оно сладкое.</p>
+                    </li>
+                    <li>
+                        <img src="аниме.jpg" alt="Просмотр аниме">
+                        <p>Просмотр аниме - это целый мир приключений и эмоций, который увлекает и вдохновляет. Каждый может найти что-то на свой вкус! Я смотрю аниме примерно с 2014-го года и за всё это время так и не посморела ни одной серии "Наруто". Вопросы?</p>
+                    </li>
+                    <li>
+                        <img src="манга.png" alt="Перевод манги">
+                        <p>Перевод манги. Я состою в команде из трёх человек, которая занимается перводом манги и манхвы на русский язык (да, мы пираты). В основном я работаю как клинер и редактор перевода. Скорее всего, у меня есть проф. деформация, связанная с редактурой текста, и именно поэтому я так мучила свою команду по ГМРПО, когда дело доходило до составления отчётов. Простите!</p>
+                    </li>
+                    <li>
+                        <img src="чгк.jpg" alt="Интеллектульные игры">
+                        <p>Спортивный "ЧГК". Около четырех лет я играла в командные интеллектуальные игры (напрмер, "Что? Где? Когда?", "Брейн-ринг", "Своя игра" и т.д.) спортивного формата (варианты, которые можно увидеть по телевидению, называются "показательными"). После перезда в Минск я почти полность отказалась от этого хобби, о чём сильно жалею и надеюсь, что в будущем смогу исправить ситуацию :(</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Социальные сети -->
+            <section id="socials">
+                <h2>Мои профили</h2>
+                <ul>
+                    <li><a href="https://t.me/grasokol" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.instagram.com/grasokol/?igsh=MXhiOWZxY3ByN29uNA%3D%3D" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com/grasokol?t=c5sEXRdWcX1e7LQdt9O14Q&s=09" target="_blank">Twitter</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Grasokol. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
